@@ -6,7 +6,7 @@ type Props = {
   };
 };
 
-export const generateMetadata = async ({ params }: Props): Metadata => {
+export const generateMetadata = async ({ params }: Props) => {
   const title = await new Promise((resolve) => {
     setTimeout(() => {
       resolve(`iPhone ${params.productId}`);
